@@ -1,6 +1,7 @@
 #  We will use this for exception handling
 import sys # sys library will have all the exception
-import logging
+# import logging
+from src.logger import logging
 def error_message_detail(error, error_detail:sys): #error_detail will be present into sys
     # Whenever error occured, we will call this function
     _, _ , exc_tb = error_detail.exc_info() #execution information. it will give all the information  like line number, which error etc
@@ -20,10 +21,10 @@ class CustomException(Exception):
         return self.error_message
     
 # Testing  code of exception.py file 
-# if __name__=="__main__":
+if __name__=="__main__":
 
-#     try:
-#         a=1/0
-#     except Exception as e:
-#         logging.info("Divide by zero error")
-#         raise CustomException(e, sys)
+    try:
+        a=1/0
+    except Exception as e:
+        logging.info("Divide by zero error")
+        raise CustomException(e, sys)
