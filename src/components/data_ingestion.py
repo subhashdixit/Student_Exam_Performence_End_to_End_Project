@@ -13,9 +13,9 @@ from dataclasses import dataclass #Use to created class variable
 # To define a class we use __init__. But with dataclass we can directly define class variable
 class DataIngestionConfig:
     # Any required input for dataingestion
-    train_data_path:str = os.path.join("artificats","train.csv")
-    test_data_path:str = os.path.join("artificats","test.csv")
-    raw_data_path:str = os.path.join("artificats","data.csv")
+    train_data_path:str = os.path.join("artifacts","train.csv")
+    test_data_path:str = os.path.join("artifacts","test.csv")
+    raw_data_path:str = os.path.join("artifacts","data.csv")
     # These all we give as input and dataingetsionconfig will save the data in specific path
 
 class DataIngestion:
