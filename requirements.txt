@@ -7,5 +7,6 @@ catboost
 xgboost
 dill
 flask
+# pickle
 # This will automaticall trigger setup.py file
 # -e .

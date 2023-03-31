@@ -2,9 +2,18 @@
 ```
 Steps:
 Set up the GitHub (Repository)
-New environment 
+
+Conda New environment: 
+```
 conda create -p venv python==3.8 -y	
 conda activate venv/
+```
+Alternatve: 
+```
+Adding virtual env : python -m venv ./venv
+Actiavting virtual env : .\venv\Scripts\Activate.ps1
+```
+
 …or create a new repository on the command line
 echo "# Student_Exam_Performence_End_to_End_Project" >> README.md
 git init
